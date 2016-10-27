@@ -1,3 +1,9 @@
 ### The below code will show the list of services running on your computer which is local ### 
 
 Get-Process
+
+## The below code will list TOP high CPU usage application running on local computer, which begins with A and wildcard * is being used ##
+
+Get-Process | Where-Object {$_.ProcessName -like "A*"} | sort CPU -Descending | Out-File C:\<Your Directory>\<File Name>.txt
+
+## You can added A-Z alphabet in the above script ( example -like "B*") This will show top B application names using high CPU Usage ##
