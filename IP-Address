@@ -1,0 +1,17 @@
+--  The below code will find the IP address 
+
+ipconfig 
+
+-- Internet Protocol complete details 
+
+ipconfig /all
+
+--- You can save the output of the ipconfig to any windows supported file system like .txt, and you can save it on any desired location
+-- In your computer or network location unless you have access to it.
+
+
+ipconfig /all | Out-Put C:\<Directory Name>\<Text Name>.txt
+
+--or
+
+ipconfig /all | Out-Put \\<Server Name>\<Folder Name>\<Text Name>.txt
