@@ -1,0 +1,7 @@
+-- script code--
+
+Get-Service 
+
+--This command lets to see all the services which are currently running/stopped on your computer
+
+-- You can execute this command on both Powershell and Powsershell ISE 
