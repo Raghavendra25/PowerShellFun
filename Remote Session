@@ -1,0 +1,3 @@
+# How to take remote session in a domain environment
+
+By default ExecutionPolicy is enabled in Windows Server 2012, and the policy is set to RemoteSigned, and now question arises what is RemoteSigned.
