@@ -1,4 +1,6 @@
 
+#EXECUTION POLICY BASICS
+
 There are different types of ExecutionPolicy in powershell:
 
  1.Restricted 
@@ -13,3 +15,8 @@ There are different types of ExecutionPolicy in powershell:
     -> This policy allows a script to run as long as they are digitally signed by trusted policy
     -> Within this policy, when you attempt to run a signed script, you will receive a prompt stating do you trust this publisher 
     -> Then you can run the script
+    
+To check execution policy in Powershell, type Get-ExecutionPolicy and hit enter
+
+
+# In future, I will explain how to set execution policy using existing policies with the powerful management tool GPO :-) Which only works under domain network environment
