@@ -1,0 +1,15 @@
+
+There are different types of ExecutionPolicy in powershell:
+
+ 1.Restricted 
+     -> This policy allows a user to run runtime commands, however, will not be able to run scripts no matter the script is location in           local or Administrator. 
+ 2.Unresctricted
+    -> This policy runs on powershell window regardless of wheather they are signed or not from trusted publisher
+ 3.RemoteSigned 
+    -> By default this policy is set in Windows Server 2012
+    -> Scripts which are downloaded from anywhere must be signed from a trusted publisher
+    -> Scripts created local need not be signed 
+ 4.AllSigned
+    -> This policy allows a script to run as long as they are digitally signed by trusted policy
+    -> Within this policy, when you attempt to run a signed script, you will receive a prompt stating do you trust this publisher 
+    -> Then you can run the script
