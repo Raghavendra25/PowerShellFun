@@ -1,3 +1,21 @@
 # How to take remote session in a domain environment
 
-By default ExecutionPolicy is enabled in Windows Server 2012, and the policy is set to RemoteSigned, and now question arises what is RemoteSigned.
+By default ExecutionPolicy is enabled in Windows Server 2012, and the policy is set to RemoteSigned, and now question arises what is RemoteSigned. Please refer Execution Policy under @PowerShellFun
+
+Before working on this, make sure you have enabled remote session 
+
+Type : Enable-PSSession -Force to activate WinRM service and restart the WinRM service by typing Restart-Service WinRM ;-) You are good to go.
+
+Login into Powershell as an admin and type or copy paste the below command
+
+Enter-PSSession -Computer . -Credentials DOMAINNAME\USER_NAME 
+
+. -> Referes to local computer
+
+Enter-PSSession -Computer X.X.X.X -Credentials DOMAINNAME\USER_NAME 
+
+X.X.X.X -> Refers to IP Address
+
+Enter-PSSession -Computer COMPUTERNAME -Credentials DOMAINNAME\USER_NAME 
+
+COMPUTERNAME -> You can enter computername, make sure DNS is set and working fine :-) 
